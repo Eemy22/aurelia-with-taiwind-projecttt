@@ -1,0 +1,36 @@
+<import from="../src/fourohfourPage/fourohfour-page"></import>
+<!-- <import from="./componenten/view/footer/app-footer"></import> -->
+
+
+
+<div class="container mx-auto p-6 flex flex-col ">
+    <div class="flex items-center justify-between">
+    <div class="flex">
+       <div class=" w-10"> <img src.bind="logo" alt="tailwind logo"> </div>
+        <div class=" text-black font-bold">tailwind</div>
+    </div>
+   <ul class=" hidden md:flex space-x-6">
+       <li><a class="text-blue-950 hover:text-yellow-300" load="protofolio"> Protofolio</a></li>
+       <li><a class="text-blue-950 hover:text-yellow-300" load="about"> About</a></li>
+       <li><a class="text-blue-950 hover:text-yellow-300" load="Contact"> Contact</a></li>
+       <li><a class="text-blue-950 hover:text-yellow-300" load="Social"> Social</a></li>
+       <li><a class=" hover:text-yellow-300 bg-orange-500 text-white px-6 p-2 rounded-full" load="Social"> Call Me</a></li>
+       
+   </ul>
+   <button id="mobile-btn" class="md:hidden"><i click.trigger="menue()" class="ri-menu-line text-2xl"></i></button>
+</div>
+     <div class="md:hidden">
+        <div class="absolute flex  ${display} flex-col items-center space-y-4 font-bold bg-gray-50 py-8 left-6 right-6 drop-shadow-lg border-gray-200">
+            <a class="text-blue-950 hover:text-yellow-500" load="protofolio"> Protofolio</a>
+            <a class="text-blue-950 hover:text-yellow-500" load="about"> About</a>
+            <a class="text-blue-950 hover:text-yellow-500" load="Contact"> Contact</a>
+            <a class="text-blue-950 hover:text-yellow-500" load="Social"> Social</a>
+            <a class="text-white hover:bg-orange-400 bg-orange-500 px-6 p-2 rounded-full" load="Social"> Call Me</a>
+            
+        </div>
+     </div>
+</div>
+
+<au-viewport> </au-viewport>
+
+<!-- <app-footer></app-footer> -->
